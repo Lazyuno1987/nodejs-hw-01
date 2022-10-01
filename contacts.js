@@ -47,8 +47,7 @@ const addContact = async (name, email, phone)=> {
     };
     contacts.push(newContact)
      updateContacts(contacts);
-     console.log(contacts)
-    return newContact;
+     return newContact;
 }
 
 module.exports = {
