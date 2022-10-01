@@ -1,4 +1,4 @@
-// const {nanoid} = require("nanoid");
+
 const uuid = require("uuid")
 const path = require("path")
  const contactsPath = path.join(__dirname, "./db/contacts.json");
@@ -8,7 +8,7 @@ const updateContacts = async(contact) => {
     await fs.writeFile(contactsPath, JSON.stringify(contact, null, 2))
 }
 
-// TODO: задокументувати кожну функцію
+
 const listContacts = async()=> {
  const data = await fs.readFile(contactsPath, "utf-8")
  
